@@ -10,16 +10,27 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@nuxtjs/color-mode": "^3.5.2",
+    "@prisma/client": "^6.5.0",
+    "@types/uuid": "^10.0.0",
+    "@vueuse/core": "^13.0.0",
+    "bcrypt": "^5.1.1",
     "nuxt": "^3.16.1",
+    "uuid": "^11.1.0",
     "vue": "^3.5.13",
     "vue-router": "^4.5.0"
   },
   "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
     "@types/node": "^22.13.11",
     "autoprefixer": "^10.4.21",
     "postcss": "^8.5.3",
+    "prisma": "^6.5.0",
     "sass": "^1.86.0",
     "sass-loader": "^16.0.5",
     "tailwindcss": "^3.4.17"
+  },
+  "prisma": {
+    "schema": "./server/database/schema.prisma"
   }
 }

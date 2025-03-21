@@ -2,12 +2,10 @@
 import path from "path";
 import { defineNuxtConfig } from "nuxt/config";
 
+
 export default defineNuxtConfig({
   compatibilityDate: "2024-11-01",
   devtools: { enabled: true },
-  alias: {
-    "@": path.resolve(__dirname, "/"),
-  },
   css: ["~/assets/css/main.scss"],
   postcss: {
     plugins: {
@@ -15,4 +13,9 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+  ssr: false,
+  modules: ["@nuxtjs/color-mode"],
+  colorMode: {
+    classSuffix: ''
+   },
 });
